@@ -109,10 +109,9 @@ export function ZodiacReading({ sign }) {
         </p>
         <p className="zodiac-card-blurb">{blurb}</p>
         {energy ? (
-          <div className="zodiac-card-energy">
-            <strong>能量特點</strong>
-            <p>{energy}</p>
-          </div>
+          <p className="zodiac-card-energy">
+            <strong>能量特點</strong> {energy}
+          </p>
         ) : null}
       </div>
     </article>

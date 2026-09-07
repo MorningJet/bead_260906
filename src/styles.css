@@ -1276,9 +1276,9 @@ img {
 .zodiac-card-copy {
   position: relative;
   z-index: 1;
-  margin-left: 26%;
-  padding: 6px 8px 6px 4px;
-  background: linear-gradient(90deg, transparent, rgba(6, 8, 12, 0.28) 18%, rgba(6, 8, 12, 0.42));
+  margin-left: 16%;
+  padding: 6px 8px 6px 2px;
+  background: linear-gradient(90deg, transparent, rgba(6, 8, 12, 0.28) 12%, rgba(6, 8, 12, 0.42));
 }
 
 .zodiac-card.is-fire { --zg: #ffb08a; }
@@ -1307,7 +1307,7 @@ img {
 }
 
 .zodiac-card-blurb,
-.zodiac-card-energy p {
+.zodiac-card-energy {
   margin: 0;
   font-size: 10.5px;
   line-height: 1.4;
@@ -1324,9 +1324,6 @@ img {
 
 .zodiac-card-energy {
   margin-top: 4px;
-}
-
-.zodiac-card-energy p {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -1334,8 +1331,6 @@ img {
 }
 
 .zodiac-card-energy strong {
-  display: block;
-  margin-bottom: 2px;
   font-size: 11px;
   font-weight: 650;
   color: var(--zg);
