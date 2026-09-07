@@ -10,11 +10,11 @@ import { DESIGNERS } from './lib/designers.js'
 
 const HEROES = [
   {
-    id: 'nature',
-    image: './home/hero-nature.png',
-    tag: '天然靈感',
-    title: '真實自然，靈感有根',
-    desc: '由礦物紋理出發，把自然的形狀、顏色與溫度\n放進每一條可戴的手鏈裏。',
+    id: 'constellation',
+    image: './home/hero-constellation.jpg',
+    tag: '星座配珠',
+    title: '把星空編成可戴的手鏈',
+    desc: '十二星座各有主石。輸入生日，\n讓專屬水晶跟著你的星盤走。',
     overlay: 'dark',
   },
   {
