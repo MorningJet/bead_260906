@@ -101,6 +101,30 @@ export function stringLayout(beads, scale, ring) {
   })
 }
 
+function wrapDelta(from, to) {
+  let d = to - from
+  while (d > Math.PI) d -= Math.PI * 2
+  while (d < -Math.PI) d += Math.PI * 2
+  return d
+}
+
+/** Put the new bead in the ring slot closest to `targetAngle` (0 = right, toward the shelf). */
+export function insertBeadToward(beads, newBead, targetAngle = 0) {
+  if (!beads.length) return [newBead]
+  let best = [...beads, newBead]
+  let bestDiff = Infinity
+  for (let i = 0; i <= beads.length; i += 1) {
+    const trial = [...beads.slice(0, i), newBead, ...beads.slice(i)]
+    const laid = stringLayout(trial, computeScale(trial))
+    const diff = Math.abs(wrapDelta(laid[i].angle, targetAngle))
+    if (diff < bestDiff) {
+      bestDiff = diff
+      best = trial
+    }
+  }
+  return best
+}
+
 export function scatterCandidates(existing, preferTop = true) {
   const tries = []
   for (let i = 0; i < 28; i += 1) {

@@ -35,6 +35,7 @@ import {
   isPendant,
   isThinSpacer,
   reorderByAngle,
+  insertBeadToward,
   ringPoint,
   stringLayout,
   uid,
@@ -81,13 +82,35 @@ function clientToLocal(el, clientX, clientY) {
   }
 }
 
+function readFlyPose(el, fallback) {
+  const cs = getComputedStyle(el)
+  const x = parseFloat(cs.left)
+  const y = parseFloat(cs.top)
+  const size = parseFloat(cs.width)
+  return {
+    x: Number.isFinite(x) ? x : fallback.x,
+    y: Number.isFinite(y) ? y : fallback.y,
+    size: Number.isFinite(size) ? size : fallback.size,
+    rot: fallback.rot,
+  }
+}
+
 function FlyingBead({ flight, onDone }) {
   const nodeRef = useRef(null)
   const doneRef = useRef(false)
+  const genRef = useRef(0)
+  const animRef = useRef(null)
+  const fromRef = useRef({
+    x: flight.startX,
+    y: flight.startY,
+    size: flight.startSize,
+    rot: flight.startRot,
+  })
+  const startedRef = useRef(false)
 
   useEffect(() => {
     const el = nodeRef.current
-    if (!el) return undefined
+    if (!el || doneRef.current) return undefined
 
     const finish = () => {
       if (doneRef.current) return
@@ -95,19 +118,31 @@ function FlyingBead({ flight, onDone }) {
       onDone()
     }
 
-    const midX = flight.startX + (flight.endX - flight.startX) * 0.48
-    const midY = flight.startY + (flight.endY - flight.startY) * 0.42 - flight.lift
-    const midSize = flight.startSize + (flight.endSize - flight.startSize) * 0.62
-    const midRot = flight.startRot + (flight.endRot - flight.startRot) * 0.55
+    const from = startedRef.current
+      ? readFlyPose(el, fromRef.current)
+      : { x: flight.startX, y: flight.startY, size: flight.startSize, rot: flight.startRot }
+    startedRef.current = true
+    fromRef.current = from
 
+    const dist = Math.hypot(flight.endX - from.x, flight.endY - from.y)
+    const lift = dist > 18 ? Math.min(32, dist * 0.12) : 0
+    const midX = from.x + (flight.endX - from.x) * 0.5
+    const midY = from.y + (flight.endY - from.y) * 0.5 - lift
+    const midSize = from.size + (flight.endSize - from.size) * 0.7
+    const endRot = shortestDeg(from.rot, flight.endRot)
+    const midRot = from.rot + (endRot - from.rot) * 0.58
+    const duration = Math.max(220, Math.min(FLY_MS, 180 + dist * 0.55))
+
+    const gen = ++genRef.current
+    animRef.current?.cancel()
     const anim = el.animate(
       [
         {
-          left: `${flight.startX}px`,
-          top: `${flight.startY}px`,
-          width: `${flight.startSize}px`,
-          height: `${flight.startSize}px`,
-          transform: `translate(-50%, -50%) rotate(${flight.startRot}deg)`,
+          left: `${from.x}px`,
+          top: `${from.y}px`,
+          width: `${from.size}px`,
+          height: `${from.size}px`,
+          transform: `translate(-50%, -50%) rotate(${from.rot}deg)`,
         },
         {
           left: `${midX}px`,
@@ -115,25 +150,33 @@ function FlyingBead({ flight, onDone }) {
           width: `${midSize}px`,
           height: `${midSize}px`,
           transform: `translate(-50%, -50%) rotate(${midRot}deg)`,
-          offset: 0.48,
+          offset: 0.46,
         },
         {
           left: `${flight.endX}px`,
           top: `${flight.endY}px`,
           width: `${flight.endSize}px`,
           height: `${flight.endSize}px`,
-          transform: `translate(-50%, -50%) rotate(${flight.endRot}deg)`,
+          transform: `translate(-50%, -50%) rotate(${endRot}deg)`,
         },
       ],
-      { duration: FLY_MS, easing: FLY_EASE, fill: 'forwards' },
+      { duration, easing: FLY_EASE, fill: 'forwards' },
     )
-    anim.onfinish = finish
-    const timer = window.setTimeout(finish, FLY_MS + 60)
-    return () => {
-      anim.cancel()
-      window.clearTimeout(timer)
+    animRef.current = anim
+    fromRef.current = { x: flight.endX, y: flight.endY, size: flight.endSize, rot: endRot }
+    anim.onfinish = () => {
+      if (gen !== genRef.current) return
+      finish()
     }
-  }, [flight.id])
+    const timer = window.setTimeout(() => {
+      if (gen !== genRef.current) return
+      finish()
+    }, duration + 80)
+    return () => {
+      window.clearTimeout(timer)
+      anim.cancel()
+    }
+  }, [flight.id, flight.endX, flight.endY, flight.endSize, flight.endRot])
 
   return (
     <img
@@ -214,7 +257,7 @@ export default function App() {
     settleTimer.current = window.setTimeout(() => {
       settlingLock.current = false
       setSettling(false)
-    }, FLY_MS + 40)
+    }, 460)
   }
 
   const device = DEVICES.find((d) => d.id === deviceId) || DEFAULT_DEVICE
@@ -330,12 +373,60 @@ export default function App() {
     })
   }
 
+  function flightSlot(bead, slot) {
+    const phone = phoneRef.current
+    const tray = trayRef.current
+    if (!phone || !tray || !slot) return null
+    const box = tray.getBoundingClientRect()
+    const end = clientToLocal(
+      phone,
+      box.left + box.width * (0.5 + slot.x * TRAY_POS),
+      box.top + box.height * (0.5 + slot.y * TRAY_POS),
+    )
+    return {
+      endX: end.x,
+      endY: end.y,
+      endSize: Math.max(18, tray.offsetWidth * (slot.faceR ?? slot.r) * 0.9),
+      endRot: holeDegOf(slot.x, slot.y, isPendant(bead)),
+    }
+  }
+
+  function retargetFlights(list) {
+    const laid = stringLayout(list, computeScale(list))
+    setFlights((cur) => {
+      if (!cur.length) return cur
+      let changed = false
+      const next = cur.map((flight) => {
+        const idx = list.findIndex((b) => b.id === flight.id)
+        if (idx < 0) return flight
+        const dest = flightSlot(list[idx], laid[idx])
+        if (!dest) return flight
+        if (
+          Math.hypot(dest.endX - flight.endX, dest.endY - flight.endY) < 0.8 &&
+          Math.abs(dest.endSize - flight.endSize) < 0.8
+        ) {
+          return flight
+        }
+        changed = true
+        return { ...flight, ...dest, endRot: shortestDeg(flight.endRot, dest.endRot) }
+      })
+      return changed ? next : cur
+    })
+  }
+
   function addProduct(product, originEl) {
     const variant = selectedVariant(product)
     const current = beadsRef.current
-    const nextBeads = [...current, { id: 'tmp', diameter: variant.diameter, x: 0, y: 0 }]
-    const laid = stringLayout(nextBeads, computeScale(nextBeads))
-    const last = laid.at(-1) || { x: 0, y: -PATTERN_RING, faceR: 0.1, r: 0.1 }
+    const tray = trayRef.current
+    const origin = originEl?.getBoundingClientRect()
+    let targetAngle = 0
+    if (tray && origin) {
+      const box = tray.getBoundingClientRect()
+      targetAngle = Math.atan2(
+        origin.top + origin.height / 2 - (box.top + box.height / 2),
+        origin.left + origin.width / 2 - (box.left + box.width / 2),
+      )
+    }
 
     const bead = {
       id: uid(),
@@ -345,62 +436,44 @@ export default function App() {
       diameter: variant.diameter,
       price: variant.price,
       category2: product.category2,
-      x: last.x,
-      y: last.y,
+      x: 0,
+      y: 0,
       vx: 0,
       vy: 0,
       rot: 0,
     }
 
+    const merged = insertBeadToward(current, bead, targetAngle)
+    const laid = stringLayout(merged, computeScale(merged))
+    const idx = merged.findIndex((b) => b.id === bead.id)
+    const slot = laid[idx] || laid.at(-1) || { x: 0, y: -PATTERN_RING, faceR: 0.1, r: 0.1 }
+    bead.x = slot.x
+    bead.y = slot.y
+
     pushHistory(current)
-    const merged = [...current, bead]
     beadsRef.current = merged
-
-    const commit = () => {
-      setBeads(merged)
-      pulseSettle()
-      const phone = phoneRef.current
-      const tray = trayRef.current
-      const origin = originEl?.getBoundingClientRect()
-      if (!phone || !tray || !origin) return
-      const trayBoxNow = tray.getBoundingClientRect()
-      const start = clientToLocal(phone, origin.left + origin.width / 2, origin.top + origin.height / 2)
-      const end = clientToLocal(
-        phone,
-        trayBoxNow.left + trayBoxNow.width * (0.5 + last.x * TRAY_POS),
-        trayBoxNow.top + trayBoxNow.height * (0.5 + last.y * TRAY_POS),
-      )
-      const startSize = Math.max(22, origin.width * 0.72)
-      const endSize = Math.max(18, tray.offsetWidth * (last.faceR ?? last.r) * 0.9)
-      const dist = Math.hypot(end.x - start.x, end.y - start.y)
-      const pendant = isPendant(bead)
-      const endRot = shortestDeg(0, holeDegOf(last.x, last.y, pendant))
-      setArriving((cur) => new Set(cur).add(bead.id))
-      setFlights((cur) => [
-        ...cur,
-        {
-          id: bead.id,
-          src: bead.image,
-          startX: start.x,
-          startY: start.y,
-          endX: end.x,
-          endY: end.y,
-          startSize,
-          endSize,
-          startRot: 0,
-          endRot,
-          lift: Math.min(42, Math.max(16, dist * 0.16)),
-        },
-      ])
-    }
-
-    if (settlingLock.current) {
-      commit()
-    } else {
-      settlingLock.current = true
-      setSettling(true)
-      requestAnimationFrame(commit)
-    }
+    setBeads(merged)
+    pulseSettle()
+    retargetFlights(merged)
+    const phone = phoneRef.current
+    if (!phone || !tray || !origin) return
+    const start = clientToLocal(phone, origin.left + origin.width / 2, origin.top + origin.height / 2)
+    const dest = flightSlot(bead, slot)
+    if (!dest) return
+    setArriving((cur) => new Set(cur).add(bead.id))
+    setFlights((cur) => [
+      ...cur,
+      {
+        id: bead.id,
+        src: bead.image,
+        startX: start.x,
+        startY: start.y,
+        startSize: Math.max(22, origin.width * 0.72),
+        startRot: 0,
+        ...dest,
+        endRot: shortestDeg(0, dest.endRot),
+      },
+    ])
   }
 
   function clearAll() {
