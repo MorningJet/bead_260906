@@ -58,7 +58,20 @@ function cardBeadScale(product, diameter) {
 
 const iconSize = 18
 const iconStroke = 1.8
-const FLY_MS = 680
+const FLY_MS = 560
+const FLY_EASE = 'cubic-bezier(0.22, 0.86, 0.28, 1)'
+
+function shortestDeg(from, to) {
+  let delta = to - from
+  while (delta > 180) delta -= 360
+  while (delta < -180) delta += 360
+  return from + delta
+}
+
+function holeDegOf(x, y, pendant) {
+  const ang = Math.atan2(y, x)
+  return pendant ? (ang * 180) / Math.PI + 270 : ((ang + Math.PI / 2) * 180) / Math.PI
+}
 
 function clientToLocal(el, clientX, clientY) {
   const box = el.getBoundingClientRect()
@@ -69,33 +82,71 @@ function clientToLocal(el, clientX, clientY) {
 }
 
 function FlyingBead({ flight, onDone }) {
-  const [flying, setFlying] = useState(false)
+  const nodeRef = useRef(null)
+  const doneRef = useRef(false)
 
   useEffect(() => {
-    const start = requestAnimationFrame(() => {
-      requestAnimationFrame(() => setFlying(true))
-    })
-    const timer = window.setTimeout(onDone, FLY_MS)
+    const el = nodeRef.current
+    if (!el) return undefined
+
+    const finish = () => {
+      if (doneRef.current) return
+      doneRef.current = true
+      onDone()
+    }
+
+    const midX = flight.startX + (flight.endX - flight.startX) * 0.48
+    const midY = flight.startY + (flight.endY - flight.startY) * 0.42 - flight.lift
+    const midSize = flight.startSize + (flight.endSize - flight.startSize) * 0.62
+    const midRot = flight.startRot + (flight.endRot - flight.startRot) * 0.55
+
+    const anim = el.animate(
+      [
+        {
+          left: `${flight.startX}px`,
+          top: `${flight.startY}px`,
+          width: `${flight.startSize}px`,
+          height: `${flight.startSize}px`,
+          transform: `translate(-50%, -50%) rotate(${flight.startRot}deg)`,
+        },
+        {
+          left: `${midX}px`,
+          top: `${midY}px`,
+          width: `${midSize}px`,
+          height: `${midSize}px`,
+          transform: `translate(-50%, -50%) rotate(${midRot}deg)`,
+          offset: 0.48,
+        },
+        {
+          left: `${flight.endX}px`,
+          top: `${flight.endY}px`,
+          width: `${flight.endSize}px`,
+          height: `${flight.endSize}px`,
+          transform: `translate(-50%, -50%) rotate(${flight.endRot}deg)`,
+        },
+      ],
+      { duration: FLY_MS, easing: FLY_EASE, fill: 'forwards' },
+    )
+    anim.onfinish = finish
+    const timer = window.setTimeout(finish, FLY_MS + 60)
     return () => {
-      cancelAnimationFrame(start)
+      anim.cancel()
       window.clearTimeout(timer)
     }
   }, [flight.id])
 
-  const x = flying ? flight.endX : flight.startX
-  const y = flying ? flight.endY : flight.startY
-
   return (
     <img
+      ref={nodeRef}
       className="bead-fly"
       src={flight.src}
       alt=""
       draggable={false}
       style={{
-        left: x,
-        top: y,
-        width: flight.size,
-        height: flight.size,
+        left: flight.startX,
+        top: flight.startY,
+        width: flight.startSize,
+        height: flight.startSize,
       }}
     />
   )
@@ -133,8 +184,11 @@ export default function App() {
   const beadsRef = useRef(beads)
   const trayBox = useRef({ cx: 0, cy: 0, inner: 1, rect: null })
   const toastTimer = useRef(null)
+  const settleTimer = useRef(null)
+  const settlingLock = useRef(false)
   const historyPushed = useRef(false)
   const [gathering, setGathering] = useState(false)
+  const [settling, setSettling] = useState(false)
   const [flights, setFlights] = useState([])
   const [arriving, setArriving] = useState(() => new Set())
   const [savedDesigns, setSavedDesigns] = useState(() => loadSavedDesigns())
@@ -147,8 +201,21 @@ export default function App() {
 
   useEffect(() => {
     const t = setTimeout(() => setBooting(false), 900)
-    return () => clearTimeout(t)
+    return () => {
+      clearTimeout(t)
+      window.clearTimeout(settleTimer.current)
+    }
   }, [])
+
+  function pulseSettle() {
+    settlingLock.current = true
+    setSettling(true)
+    window.clearTimeout(settleTimer.current)
+    settleTimer.current = window.setTimeout(() => {
+      settlingLock.current = false
+      setSettling(false)
+    }, FLY_MS + 40)
+  }
 
   const device = DEVICES.find((d) => d.id === deviceId) || DEFAULT_DEVICE
 
@@ -288,12 +355,14 @@ export default function App() {
     pushHistory(current)
     const merged = [...current, bead]
     beadsRef.current = merged
-    setBeads(merged)
 
-    const phone = phoneRef.current
-    const tray = trayRef.current
-    const origin = originEl?.getBoundingClientRect()
-    if (phone && tray && origin) {
+    const commit = () => {
+      setBeads(merged)
+      pulseSettle()
+      const phone = phoneRef.current
+      const tray = trayRef.current
+      const origin = originEl?.getBoundingClientRect()
+      if (!phone || !tray || !origin) return
       const trayBoxNow = tray.getBoundingClientRect()
       const start = clientToLocal(phone, origin.left + origin.width / 2, origin.top + origin.height / 2)
       const end = clientToLocal(
@@ -301,7 +370,11 @@ export default function App() {
         trayBoxNow.left + trayBoxNow.width * (0.5 + last.x * TRAY_POS),
         trayBoxNow.top + trayBoxNow.height * (0.5 + last.y * TRAY_POS),
       )
-      const size = Math.max(18, tray.offsetWidth * (last.faceR ?? last.r) * 0.9)
+      const startSize = Math.max(22, origin.width * 0.72)
+      const endSize = Math.max(18, tray.offsetWidth * (last.faceR ?? last.r) * 0.9)
+      const dist = Math.hypot(end.x - start.x, end.y - start.y)
+      const pendant = isPendant(bead)
+      const endRot = shortestDeg(0, holeDegOf(last.x, last.y, pendant))
       setArriving((cur) => new Set(cur).add(bead.id))
       setFlights((cur) => [
         ...cur,
@@ -312,9 +385,21 @@ export default function App() {
           startY: start.y,
           endX: end.x,
           endY: end.y,
-          size,
+          startSize,
+          endSize,
+          startRot: 0,
+          endRot,
+          lift: Math.min(42, Math.max(16, dist * 0.16)),
         },
       ])
+    }
+
+    if (settlingLock.current) {
+      commit()
+    } else {
+      settlingLock.current = true
+      setSettling(true)
+      requestAnimationFrame(commit)
     }
   }
 
@@ -608,7 +693,7 @@ export default function App() {
                   <button
                     key={bead.id}
                     type="button"
-                    className={`bead ${isDrag ? 'is-drag' : ''} is-strung ${gathering ? 'is-gathering' : ''} ${arriving.has(bead.id) ? 'is-arriving' : ''} ${pendant ? 'is-pendant' : ''} ${thin ? 'is-spacer' : ''}`}
+                    className={`bead ${isDrag ? 'is-drag' : ''} is-strung ${gathering ? 'is-gathering' : ''} ${settling ? 'is-settling' : ''} ${arriving.has(bead.id) ? 'is-arriving' : ''} ${pendant ? 'is-pendant' : ''} ${thin ? 'is-spacer' : ''}`}
                     style={{
                       left: `${50 + posX * TRAY_POS * 100}%`,
                       top: `${50 + posY * TRAY_POS * 100}%`,
