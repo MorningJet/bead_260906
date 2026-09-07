@@ -1,5 +1,4 @@
 import { useMemo, useState } from 'react'
-import ZodiacGlyph from './ZodiacGlyph.jsx'
 import { daysInMonth, signBack, signFromBirth, signIcon, zodiacTone } from './lib/zodiac.js'
 
 export function ZodiacCenterButton({ sign, onClick }) {
@@ -14,7 +13,7 @@ export function ZodiacCenterButton({ sign, onClick }) {
       aria-label={sign ? `目前星座 ${sign.name}，點擊可修改生日` : '點擊輸入生日，查看星座推薦'}
     >
       <span className="zodiac-center-face">
-        <ZodiacGlyph id={iconId} className="zodiac-center-glyph" />
+        <img className="zodiac-center-icon" src={signIcon(iconId)} alt="" />
       </span>
     </button>
   )
@@ -97,6 +96,7 @@ export function ZodiacReading({ sign }) {
   if (!sign) return null
   const parts = sign.reading.split('。').map((s) => s.trim()).filter(Boolean)
   const blurb = `${parts[0]}。`
+  const energy = parts.length > 1 ? `${parts.slice(1).join('。')}。` : ''
   const tone = zodiacTone(sign.element)
 
   return (
@@ -108,6 +108,12 @@ export function ZodiacReading({ sign }) {
           {sign.keywords}
         </p>
         <p className="zodiac-card-blurb">{blurb}</p>
+        {energy ? (
+          <div className="zodiac-card-energy">
+            <strong>能量特點</strong>
+            <p>{energy}</p>
+          </div>
+        ) : null}
       </div>
     </article>
   )
