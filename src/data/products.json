@@ -1,0 +1,1563 @@
+[
+  {
+    "name": "烏拉圭紫水晶",
+    "category1": "珠子",
+    "category2": "紫水晶",
+    "image": "product_pic/乌拉圭紫水晶.png",
+    "sizes": [
+      {
+        "sku": "SJ0001-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0001-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "淨體白水晶",
+    "category1": "珠子",
+    "category2": "白水晶",
+    "image": "product_pic/净体白水晶.png",
+    "sizes": [
+      {
+        "sku": "SJ0002-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0002-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "千層彩",
+    "category1": "珠子",
+    "category2": "彩水晶",
+    "image": "product_pic/千层彩.png",
+    "sizes": [
+      {
+        "sku": "SJ0003-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0003-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "千層綠",
+    "category1": "珠子",
+    "category2": "綠水晶",
+    "image": "product_pic/千层绿.png",
+    "sizes": [
+      {
+        "sku": "SJ0004-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0004-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "半盆綠幽靈",
+    "category1": "珠子",
+    "category2": "綠水晶",
+    "image": "product_pic/半盆绿幽灵.png",
+    "sizes": [
+      {
+        "sku": "SJ0005-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0005-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "巴西紫水晶",
+    "category1": "珠子",
+    "category2": "紫水晶",
+    "image": "product_pic/巴西紫水晶.png",
+    "sizes": [
+      {
+        "sku": "SJ0006-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0006-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "檸檬晶菠蘿",
+    "category1": "珠子",
+    "category2": "黃水晶",
+    "image": "product_pic/柠檬晶菠萝.png",
+    "sizes": [
+      {
+        "sku": "SJ0007-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0007-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "檸檬黃水晶",
+    "category1": "珠子",
+    "category2": "黃水晶",
+    "image": "product_pic/柠檬黄水晶.png",
+    "sizes": [
+      {
+        "sku": "SJ0008-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0008-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "淺紅膠花",
+    "category1": "珠子",
+    "category2": "紅水晶",
+    "image": "product_pic/浅红胶花.png",
+    "sizes": [
+      {
+        "sku": "SJ0009-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0009-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "淺綠髮晶",
+    "category1": "珠子",
+    "category2": "綠水晶",
+    "image": "product_pic/浅绿发晶.png",
+    "sizes": [
+      {
+        "sku": "SJ0010-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0010-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "淺茶晶",
+    "category1": "珠子",
+    "category2": "茶水晶",
+    "image": "product_pic/浅茶晶.png",
+    "sizes": [
+      {
+        "sku": "SJ0011-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0011-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "淺草莓晶",
+    "category1": "珠子",
+    "category2": "粉水晶",
+    "image": "product_pic/浅草莓晶.png",
+    "sizes": [
+      {
+        "sku": "SJ0012-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0012-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "淺透紅膠花",
+    "category1": "珠子",
+    "category2": "紅水晶",
+    "image": "product_pic/浅透红胶花.png",
+    "sizes": [
+      {
+        "sku": "SJ0013-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0013-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "淺透黃膠花",
+    "category1": "珠子",
+    "category2": "黃水晶",
+    "image": "product_pic/浅透黄胶花.png",
+    "sizes": [
+      {
+        "sku": "SJ0014-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0014-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "深茶晶",
+    "category1": "珠子",
+    "category2": "茶水晶",
+    "image": "product_pic/深茶晶.png",
+    "sizes": [
+      {
+        "sku": "SJ0015-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0015-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "牛血紅膠花",
+    "category1": "珠子",
+    "category2": "紅水晶",
+    "image": "product_pic/牛血红胶花.png",
+    "sizes": [
+      {
+        "sku": "SJ0016-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0016-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "玻利維亞紫水晶",
+    "category1": "珠子",
+    "category2": "紫水晶",
+    "image": "product_pic/玻利维亚紫水晶.png",
+    "sizes": [
+      {
+        "sku": "SJ0017-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0017-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "白幽靈",
+    "category1": "珠子",
+    "category2": "白水晶",
+    "image": "product_pic/白幽灵.png",
+    "sizes": [
+      {
+        "sku": "SJ0018-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0018-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "白水晶",
+    "category1": "珠子",
+    "category2": "白水晶",
+    "image": "product_pic/白水晶.png",
+    "sizes": [
+      {
+        "sku": "SJ0019-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0019-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "白水晶方糖",
+    "category1": "珠子",
+    "category2": "白水晶",
+    "image": "product_pic/白水晶方糖.png",
+    "sizes": [
+      {
+        "sku": "SJ0020-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0020-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "白水晶隨型",
+    "category1": "珠子",
+    "category2": "白水晶",
+    "image": "product_pic/白水晶随型.png",
+    "sizes": [
+      {
+        "sku": "SJ0021-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0021-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "白阿塞",
+    "category1": "珠子",
+    "category2": "白水晶",
+    "image": "product_pic/白阿塞.png",
+    "sizes": [
+      {
+        "sku": "SJ0022-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0022-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "粉晶",
+    "category1": "珠子",
+    "category2": "粉水晶",
+    "image": "product_pic/粉晶.png",
+    "sizes": [
+      {
+        "sku": "SJ0023-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0023-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "粉水晶雙尖",
+    "category1": "珠子",
+    "category2": "粉水晶",
+    "image": "product_pic/粉水晶双尖.png",
+    "sizes": [
+      {
+        "sku": "SJ0024-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0024-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "粉水晶隨型",
+    "category1": "珠子",
+    "category2": "粉水晶",
+    "image": "product_pic/粉水晶随型.png",
+    "sizes": [
+      {
+        "sku": "SJ0025-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0025-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "紫水晶雙尖",
+    "category1": "珠子",
+    "category2": "紫水晶",
+    "image": "product_pic/紫水晶双尖.png",
+    "sizes": [
+      {
+        "sku": "SJ0026-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0026-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "紫馬粉",
+    "category1": "珠子",
+    "category2": "粉水晶",
+    "image": "product_pic/紫马粉.png",
+    "sizes": [
+      {
+        "sku": "SJ0027-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0027-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "綠幽靈",
+    "category1": "珠子",
+    "category2": "綠水晶",
+    "image": "product_pic/绿幽灵.png",
+    "sizes": [
+      {
+        "sku": "SJ0028-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0028-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "綠幽靈方糖",
+    "category1": "珠子",
+    "category2": "綠水晶",
+    "image": "product_pic/绿幽灵方糖.png",
+    "sizes": [
+      {
+        "sku": "SJ0029-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0029-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "綠水晶",
+    "category1": "珠子",
+    "category2": "綠水晶",
+    "image": "product_pic/绿水晶.png",
+    "sizes": [
+      {
+        "sku": "SJ0030-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0030-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "綠龍晶",
+    "category1": "珠子",
+    "category2": "綠水晶",
+    "image": "product_pic/绿龙晶.png",
+    "sizes": [
+      {
+        "sku": "SJ0031-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0031-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "芬達色膠花",
+    "category1": "珠子",
+    "category2": "橙水晶",
+    "image": "product_pic/芬达色胶花.png",
+    "sizes": [
+      {
+        "sku": "SJ0032-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0032-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "草莓晶",
+    "category1": "珠子",
+    "category2": "粉水晶",
+    "image": "product_pic/草莓晶.png",
+    "sizes": [
+      {
+        "sku": "SJ0033-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0033-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "薰衣草",
+    "category1": "珠子",
+    "category2": "紫水晶",
+    "image": "product_pic/薰衣草.png",
+    "sizes": [
+      {
+        "sku": "SJ0034-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0034-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "薰衣草方糖",
+    "category1": "珠子",
+    "category2": "紫水晶",
+    "image": "product_pic/薰衣草方糖.png",
+    "sizes": [
+      {
+        "sku": "SJ0035-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0035-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "透體雪花幽靈",
+    "category1": "珠子",
+    "category2": "白水晶",
+    "image": "product_pic/透体雪花幽灵.png",
+    "sizes": [
+      {
+        "sku": "SJ0036-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0036-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "透體黑金超",
+    "category1": "珠子",
+    "category2": "黑水晶",
+    "image": "product_pic/透体黑金超.png",
+    "sizes": [
+      {
+        "sku": "SJ0037-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0037-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "金太陽",
+    "category1": "珠子",
+    "category2": "黃水晶",
+    "image": "product_pic/金太阳.png",
+    "sizes": [
+      {
+        "sku": "SJ0038-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0038-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "閃靈",
+    "category1": "珠子",
+    "category2": "白水晶",
+    "image": "product_pic/闪灵.png",
+    "sizes": [
+      {
+        "sku": "SJ0039-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0039-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "雪花幽靈",
+    "category1": "珠子",
+    "category2": "白水晶",
+    "image": "product_pic/雪花幽灵.png",
+    "sizes": [
+      {
+        "sku": "SJ0040-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0040-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "高透紫水晶",
+    "category1": "珠子",
+    "category2": "紫水晶",
+    "image": "product_pic/高透紫水晶.png",
+    "sizes": [
+      {
+        "sku": "SJ0041-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0041-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "高透黃水晶",
+    "category1": "珠子",
+    "category2": "黃水晶",
+    "image": "product_pic/高透黄水晶.png",
+    "sizes": [
+      {
+        "sku": "SJ0042-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0042-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "黃塔晶",
+    "category1": "珠子",
+    "category2": "黃水晶",
+    "image": "product_pic/黄塔晶.png",
+    "sizes": [
+      {
+        "sku": "SJ0043-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0043-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "黃塔晶隨型",
+    "category1": "珠子",
+    "category2": "黃水晶",
+    "image": "product_pic/黄塔晶随型.png",
+    "sizes": [
+      {
+        "sku": "SJ0044-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0044-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "黃水晶雙尖",
+    "category1": "珠子",
+    "category2": "黃水晶",
+    "image": "product_pic/黄水晶双尖.png",
+    "sizes": [
+      {
+        "sku": "SJ0045-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0045-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "黃膠花",
+    "category1": "珠子",
+    "category2": "黃水晶",
+    "image": "product_pic/黄胶花.png",
+    "sizes": [
+      {
+        "sku": "SJ0046-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0046-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "黑金超",
+    "category1": "珠子",
+    "category2": "黑水晶",
+    "image": "product_pic/黑金超.png",
+    "sizes": [
+      {
+        "sku": "SJ0047-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0047-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "黑金超七",
+    "category1": "珠子",
+    "category2": "黑水晶",
+    "image": "product_pic/黑金超七.png",
+    "sizes": [
+      {
+        "sku": "SJ0048-08",
+        "diameter": 8,
+        "price": 39
+      },
+      {
+        "sku": "SJ0048-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "冰川藍海藍寶",
+    "category1": "珠子",
+    "category2": "天然石",
+    "image": "product_pic/冰川蓝海蓝宝.png",
+    "sizes": [
+      {
+        "sku": "TS0001-08",
+        "diameter": 8,
+        "price": 69
+      },
+      {
+        "sku": "TS0001-10",
+        "diameter": 10,
+        "price": 139
+      }
+    ]
+  },
+  {
+    "name": "南紅瑪瑙",
+    "category1": "珠子",
+    "category2": "天然石",
+    "image": "product_pic/南红玛瑙.png",
+    "sizes": [
+      {
+        "sku": "TS0002-08",
+        "diameter": 8,
+        "price": 69
+      },
+      {
+        "sku": "TS0002-10",
+        "diameter": 10,
+        "price": 139
+      }
+    ]
+  },
+  {
+    "name": "雙眼金曜石",
+    "category1": "珠子",
+    "category2": "天然石",
+    "image": "product_pic/双眼金曜石.png",
+    "sizes": [
+      {
+        "sku": "TS0003-08",
+        "diameter": 8,
+        "price": 69
+      },
+      {
+        "sku": "TS0003-10",
+        "diameter": 10,
+        "price": 139
+      }
+    ]
+  },
+  {
+    "name": "雙眼銀曜石",
+    "category1": "珠子",
+    "category2": "天然石",
+    "image": "product_pic/双眼银曜石.png",
+    "sizes": [
+      {
+        "sku": "TS0004-08",
+        "diameter": 8,
+        "price": 69
+      },
+      {
+        "sku": "TS0004-10",
+        "diameter": 10,
+        "price": 139
+      }
+    ]
+  },
+  {
+    "name": "天河石",
+    "category1": "珠子",
+    "category2": "天然石",
+    "image": "product_pic/天河石.png",
+    "sizes": [
+      {
+        "sku": "TS0005-08",
+        "diameter": 8,
+        "price": 69
+      },
+      {
+        "sku": "TS0005-10",
+        "diameter": 10,
+        "price": 139
+      }
+    ]
+  },
+  {
+    "name": "太陽石",
+    "category1": "珠子",
+    "category2": "天然石",
+    "image": "product_pic/太阳石.png",
+    "sizes": [
+      {
+        "sku": "TS0006-08",
+        "diameter": 8,
+        "price": 69
+      },
+      {
+        "sku": "TS0006-10",
+        "diameter": 10,
+        "price": 139
+      }
+    ]
+  },
+  {
+    "name": "岫玉",
+    "category1": "珠子",
+    "category2": "天然石",
+    "image": "product_pic/岫玉.png",
+    "sizes": [
+      {
+        "sku": "TS0007-08",
+        "diameter": 8,
+        "price": 69
+      },
+      {
+        "sku": "TS0007-10",
+        "diameter": 10,
+        "price": 139
+      }
+    ]
+  },
+  {
+    "name": "月光石",
+    "category1": "珠子",
+    "category2": "天然石",
+    "image": "product_pic/月光石.png",
+    "sizes": [
+      {
+        "sku": "TS0008-08",
+        "diameter": 8,
+        "price": 69
+      },
+      {
+        "sku": "TS0008-10",
+        "diameter": 10,
+        "price": 139
+      }
+    ]
+  },
+  {
+    "name": "硃砂",
+    "category1": "珠子",
+    "category2": "天然石",
+    "image": "product_pic/朱砂.png",
+    "sizes": [
+      {
+        "sku": "TS0009-08",
+        "diameter": 8,
+        "price": 69
+      },
+      {
+        "sku": "TS0009-10",
+        "diameter": 10,
+        "price": 139
+      }
+    ]
+  },
+  {
+    "name": "灰月光",
+    "category1": "珠子",
+    "category2": "天然石",
+    "image": "product_pic/灰月光.png",
+    "sizes": [
+      {
+        "sku": "TS0010-08",
+        "diameter": 8,
+        "price": 69
+      },
+      {
+        "sku": "TS0010-10",
+        "diameter": 10,
+        "price": 139
+      }
+    ]
+  },
+  {
+    "name": "紫雲母",
+    "category1": "珠子",
+    "category2": "天然石",
+    "image": "product_pic/紫云母.png",
+    "sizes": [
+      {
+        "sku": "TS0011-08",
+        "diameter": 8,
+        "price": 69
+      },
+      {
+        "sku": "TS0011-10",
+        "diameter": 10,
+        "price": 139
+      }
+    ]
+  },
+  {
+    "name": "紫鋰輝",
+    "category1": "珠子",
+    "category2": "天然石",
+    "image": "product_pic/紫锂辉.png",
+    "sizes": [
+      {
+        "sku": "TS0012-08",
+        "diameter": 8,
+        "price": 69
+      },
+      {
+        "sku": "TS0012-10",
+        "diameter": 10,
+        "price": 139
+      }
+    ]
+  },
+  {
+    "name": "綠英石",
+    "category1": "珠子",
+    "category2": "天然石",
+    "image": "product_pic/绿英石.png",
+    "sizes": [
+      {
+        "sku": "TS0013-08",
+        "diameter": 8,
+        "price": 69
+      },
+      {
+        "sku": "TS0013-10",
+        "diameter": 10,
+        "price": 139
+      }
+    ]
+  },
+  {
+    "name": "莫粉",
+    "category1": "珠子",
+    "category2": "天然石",
+    "image": "product_pic/莫粉.png",
+    "sizes": [
+      {
+        "sku": "TS0014-08",
+        "diameter": 8,
+        "price": 69
+      },
+      {
+        "sku": "TS0014-10",
+        "diameter": 10,
+        "price": 139
+      }
+    ]
+  },
+  {
+    "name": "葡萄石",
+    "category1": "珠子",
+    "category2": "天然石",
+    "image": "product_pic/葡萄石.png",
+    "sizes": [
+      {
+        "sku": "TS0015-08",
+        "diameter": 8,
+        "price": 69
+      },
+      {
+        "sku": "TS0015-10",
+        "diameter": 10,
+        "price": 139
+      }
+    ]
+  },
+  {
+    "name": "藍天海藍寶",
+    "category1": "珠子",
+    "category2": "天然石",
+    "image": "product_pic/蓝天海蓝宝.png",
+    "sizes": [
+      {
+        "sku": "TS0016-08",
+        "diameter": 8,
+        "price": 69
+      },
+      {
+        "sku": "TS0016-10",
+        "diameter": 10,
+        "price": 139
+      }
+    ]
+  },
+  {
+    "name": "藍晶石",
+    "category1": "珠子",
+    "category2": "天然石",
+    "image": "product_pic/蓝晶石.png",
+    "sizes": [
+      {
+        "sku": "TS0017-08",
+        "diameter": 8,
+        "price": 69
+      },
+      {
+        "sku": "TS0017-10",
+        "diameter": 10,
+        "price": 139
+      }
+    ]
+  },
+  {
+    "name": "藍虎眼",
+    "category1": "珠子",
+    "category2": "天然石",
+    "image": "product_pic/蓝虎眼.png",
+    "sizes": [
+      {
+        "sku": "TS0018-08",
+        "diameter": 8,
+        "price": 69
+      },
+      {
+        "sku": "TS0018-10",
+        "diameter": 10,
+        "price": 139
+      }
+    ]
+  },
+  {
+    "name": "蜜蠟桶珠",
+    "category1": "珠子",
+    "category2": "天然石",
+    "image": "product_pic/蜜蜡桶珠.png",
+    "sizes": [
+      {
+        "sku": "TS0019-08",
+        "diameter": 8,
+        "price": 69
+      },
+      {
+        "sku": "TS0019-10",
+        "diameter": 10,
+        "price": 139
+      }
+    ]
+  },
+  {
+    "name": "透體灰月光",
+    "category1": "珠子",
+    "category2": "天然石",
+    "image": "product_pic/透体灰月光.png",
+    "sizes": [
+      {
+        "sku": "TS0020-08",
+        "diameter": 8,
+        "price": 69
+      },
+      {
+        "sku": "TS0020-10",
+        "diameter": 10,
+        "price": 139
+      }
+    ]
+  },
+  {
+    "name": "青提",
+    "category1": "珠子",
+    "category2": "天然石",
+    "image": "product_pic/青提.png",
+    "sizes": [
+      {
+        "sku": "TS0021-08",
+        "diameter": 8,
+        "price": 69
+      },
+      {
+        "sku": "TS0021-10",
+        "diameter": 10,
+        "price": 139
+      }
+    ]
+  },
+  {
+    "name": "高透冰曜石",
+    "category1": "珠子",
+    "category2": "天然石",
+    "image": "product_pic/高透冰曜石.png",
+    "sizes": [
+      {
+        "sku": "TS0022-08",
+        "diameter": 8,
+        "price": 69
+      },
+      {
+        "sku": "TS0022-10",
+        "diameter": 10,
+        "price": 139
+      }
+    ]
+  },
+  {
+    "name": "魔鬼海藍寶",
+    "category1": "珠子",
+    "category2": "天然石",
+    "image": "product_pic/魔鬼海蓝宝.png",
+    "sizes": [
+      {
+        "sku": "TS0023-08",
+        "diameter": 8,
+        "price": 69
+      },
+      {
+        "sku": "TS0023-10",
+        "diameter": 10,
+        "price": 139
+      }
+    ]
+  },
+  {
+    "name": "黃螢石",
+    "category1": "珠子",
+    "category2": "天然石",
+    "image": "product_pic/黄萤石.png",
+    "sizes": [
+      {
+        "sku": "TS0024-08",
+        "diameter": 8,
+        "price": 69
+      },
+      {
+        "sku": "TS0024-10",
+        "diameter": 10,
+        "price": 139
+      }
+    ]
+  },
+  {
+    "name": "黃虎眼",
+    "category1": "珠子",
+    "category2": "天然石",
+    "image": "product_pic/黄虎眼.png",
+    "sizes": [
+      {
+        "sku": "TS0025-08",
+        "diameter": 8,
+        "price": 69
+      },
+      {
+        "sku": "TS0025-10",
+        "diameter": 10,
+        "price": 139
+      }
+    ]
+  },
+  {
+    "name": "四方金",
+    "category1": "配飾",
+    "category2": "隔珠",
+    "image": "product_pic/四方金.png",
+    "sizes": [
+      {
+        "sku": "GZ0001-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "稜形鋯石銀",
+    "category1": "配飾",
+    "category2": "隔珠",
+    "image": "product_pic/棱形锆石银.png",
+    "sizes": [
+      {
+        "sku": "GZ0002-10",
+        "diameter": 8,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "沉香隔片",
+    "category1": "配飾",
+    "category2": "隔珠",
+    "image": "product_pic/沉香隔片.png",
+    "sizes": [
+      {
+        "sku": "GZ0003-10",
+        "diameter": 8,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "藏銀多面",
+    "category1": "配飾",
+    "category2": "隔珠",
+    "image": "product_pic/藏银多面.png",
+    "sizes": [
+      {
+        "sku": "GZ0004-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "金色小方塊",
+    "category1": "配飾",
+    "category2": "隔珠",
+    "image": "product_pic/金色小方块.png",
+    "sizes": [
+      {
+        "sku": "GZ0005-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "銀小方塊",
+    "category1": "配飾",
+    "category2": "隔珠",
+    "image": "product_pic/银小方块.png",
+    "sizes": [
+      {
+        "sku": "GZ0006-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "銀曜石扣",
+    "category1": "配飾",
+    "category2": "隔珠",
+    "image": "product_pic/银曜石扣.png",
+    "sizes": [
+      {
+        "sku": "GZ0007-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "隔環金",
+    "category1": "配飾",
+    "category2": "隔珠",
+    "image": "product_pic/隔环金.png",
+    "sizes": [
+      {
+        "sku": "GZ0008-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "隔環銀",
+    "category1": "配飾",
+    "category2": "隔珠",
+    "image": "product_pic/隔环银.png",
+    "sizes": [
+      {
+        "sku": "GZ0009-10",
+        "diameter": 10,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "黑曜",
+    "category1": "配飾",
+    "category2": "隔珠",
+    "image": "product_pic/黑曜.png",
+    "sizes": [
+      {
+        "sku": "GZ0010-10",
+        "diameter": 8,
+        "price": 59
+      }
+    ]
+  },
+  {
+    "name": "千傘流蘇",
+    "category1": "配飾",
+    "category2": "吊墜",
+    "image": "product_pic/千伞流苏.png",
+    "sizes": [
+      {
+        "sku": "DZ0001-03",
+        "diameter": 3,
+        "price": 99
+      }
+    ]
+  },
+  {
+    "name": "半蝴蝶銀",
+    "category1": "配飾",
+    "category2": "吊墜",
+    "image": "product_pic/半蝴蝶银.png",
+    "sizes": [
+      {
+        "sku": "DZ0002-03",
+        "diameter": 3,
+        "price": 99
+      }
+    ]
+  },
+  {
+    "name": "小金條吊墜",
+    "category1": "配飾",
+    "category2": "吊墜",
+    "image": "product_pic/小金条吊坠.png",
+    "sizes": [
+      {
+        "sku": "DZ0003-03",
+        "diameter": 3,
+        "price": 99
+      }
+    ]
+  },
+  {
+    "name": "歲歲平安",
+    "category1": "配飾",
+    "category2": "吊墜",
+    "image": "product_pic/岁岁平安.png",
+    "sizes": [
+      {
+        "sku": "DZ0004-03",
+        "diameter": 3,
+        "price": 99
+      }
+    ]
+  },
+  {
+    "name": "金色錐形",
+    "category1": "配飾",
+    "category2": "吊墜",
+    "image": "product_pic/金色锥形.png",
+    "sizes": [
+      {
+        "sku": "DZ0005-03",
+        "diameter": 3,
+        "price": 99
+      }
+    ]
+  },
+  {
+    "name": "金色隨型",
+    "category1": "配飾",
+    "category2": "吊墜",
+    "image": "product_pic/金色随型.png",
+    "sizes": [
+      {
+        "sku": "DZ0006-03",
+        "diameter": 3,
+        "price": 99
+      }
+    ]
+  },
+  {
+    "name": "銀色錐形",
+    "category1": "配飾",
+    "category2": "吊墜",
+    "image": "product_pic/银色锥形.png",
+    "sizes": [
+      {
+        "sku": "DZ0007-03",
+        "diameter": 3,
+        "price": 99
+      }
+    ]
+  },
+  {
+    "name": "鋯石蝴蝶銀",
+    "category1": "配飾",
+    "category2": "吊墜",
+    "image": "product_pic/锆石蝴蝶银.png",
+    "sizes": [
+      {
+        "sku": "DZ0008-03",
+        "diameter": 3,
+        "price": 99
+      }
+    ]
+  },
+  {
+    "name": "鏤空葉子",
+    "category1": "配飾",
+    "category2": "吊墜",
+    "image": "product_pic/镂空叶子.png",
+    "sizes": [
+      {
+        "sku": "DZ0009-03",
+        "diameter": 3,
+        "price": 99
+      }
+    ]
+  }
+]
