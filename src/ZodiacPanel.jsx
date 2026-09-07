@@ -12,6 +12,8 @@ export function ZodiacCenterButton({ sign, onClick }) {
       onPointerDown={(e) => e.stopPropagation()}
       aria-label={sign ? `目前星座 ${sign.name}，點擊可修改生日` : '點擊輸入生日，查看星座推薦'}
     >
+      <span className="zodiac-center-halo" aria-hidden />
+      <span className="zodiac-center-bezel" aria-hidden />
       <span className="zodiac-center-face">
         <img className="zodiac-center-icon" src={signIcon(iconId)} alt="" />
       </span>
