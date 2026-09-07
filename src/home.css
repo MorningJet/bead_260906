@@ -1454,7 +1454,7 @@
 }
 
 .phone.has-tabbar .shelf {
-  margin-bottom: 78px;
+  margin-bottom: 0;
 }
 
 @media (max-width: 720px) {

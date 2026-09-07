@@ -783,6 +783,7 @@ export default function App() {
             ))}
           </div>
         )}
+        {tab !== 'diy' && (
         <TabBar
           tab={tab}
           onChange={(id) => {
@@ -790,6 +791,7 @@ export default function App() {
             setTab(id)
           }}
         />
+        )}
       </div>
       </div>
       </div>

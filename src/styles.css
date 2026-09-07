@@ -590,7 +590,7 @@ img {
 
 .grid {
   overflow: auto;
-  padding: 6px 8px 88px 2px;
+  padding: 6px 8px 16px 2px;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 6px;
@@ -1190,20 +1190,20 @@ img {
   left: 50%;
   top: 50%;
   z-index: 3;
-  width: 64px;
-  height: 64px;
-  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+  transform: translate3d(-50%, -50%, 0);
   border-radius: 50%;
   display: grid;
   place-items: center;
   padding: 0;
-  overflow: visible;
-  background: transparent;
-  box-shadow: none;
+  overflow: hidden;
+  background: #152238;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.28), 0 6px 14px rgba(16, 24, 40, 0.16);
 }
 
 .zodiac-center:active {
-  transform: translate(-50%, -50%) scale(0.97);
+  transform: translate3d(-50%, -50%, 0) scale(0.97);
 }
 
 .zodiac-center-face {
@@ -1214,31 +1214,32 @@ img {
   overflow: hidden;
   display: grid;
   place-items: center;
-  background: transparent;
-  -webkit-mask-image: radial-gradient(circle at 50% 50%, #000 58%, rgba(0, 0, 0, 0.45) 74%, transparent 100%);
-  mask-image: radial-gradient(circle at 50% 50%, #000 58%, rgba(0, 0, 0, 0.45) 74%, transparent 100%);
+  background: radial-gradient(circle at 50% 40%, rgba(255, 255, 255, 0.18), transparent 64%);
 }
 
-.zodiac-center-icon {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  pointer-events: none;
+.zodiac-center-glyph {
+  width: 56%;
+  height: 56%;
+  color: #f5f8ff;
+}
+
+.zodiac-center.is-idle {
+  background: #d5d1cb;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.55), 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 .zodiac-center.is-idle .zodiac-center-face {
-  background: radial-gradient(circle at 50% 46%, rgba(28, 24, 20, 0.08) 0%, rgba(28, 24, 20, 0.03) 58%, transparent 78%);
+  background: radial-gradient(circle at 50% 46%, rgba(255, 255, 255, 0.28) 0%, transparent 70%);
 }
 
-.zodiac-center.is-idle .zodiac-center-icon {
-  filter: grayscale(1) brightness(1.15) contrast(0.85);
-  opacity: 0.38;
+.zodiac-center.is-idle .zodiac-center-glyph {
+  color: rgba(72, 68, 62, 0.42);
 }
 
-.zodiac-center.is-fire { --zg-soft: rgba(255, 120, 80, 0.14); }
-.zodiac-center.is-water { --zg-soft: rgba(90, 170, 255, 0.12); }
-.zodiac-center.is-earth { --zg-soft: rgba(180, 150, 70, 0.12); }
-.zodiac-center.is-air { --zg-soft: rgba(90, 180, 165, 0.12); }
+.zodiac-center.is-fire { background: #3c2418; }
+.zodiac-center.is-water { background: #152a48; }
+.zodiac-center.is-earth { background: #2c2414; }
+.zodiac-center.is-air { background: #16332e; }
 
 .zodiac-center-star {
   font-size: 16px;
@@ -1256,7 +1257,7 @@ img {
 
 .zodiac-shelf {
   overflow: auto;
-  padding: 8px 8px 88px 4px;
+  padding: 6px 8px 16px 4px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -1270,8 +1271,10 @@ img {
   position: relative;
   flex: 0 0 auto;
   overflow: hidden;
-  border-radius: 14px;
+  border-radius: 12px;
   color: #f6f1e6;
+  min-height: 72px;
+  max-height: 84px;
 }
 
 .zodiac-card-back {
@@ -1287,8 +1290,8 @@ img {
 .zodiac-card-copy {
   position: relative;
   z-index: 1;
-  margin-left: 20%;
-  padding: 8px 8px 8px 4px;
+  margin-left: 26%;
+  padding: 6px 8px 6px 4px;
   background: linear-gradient(90deg, transparent, rgba(6, 8, 12, 0.28) 18%, rgba(6, 8, 12, 0.42));
 }
 
@@ -1298,14 +1301,17 @@ img {
 .zodiac-card.is-air { --zg: #9ae8d6; }
 
 .zodiac-card-keys {
-  margin: 0 0 6px;
-  padding: 5px 8px;
-  border-radius: 10px;
-  font-size: 10.5px;
-  line-height: 1.45;
+  margin: 0 0 4px;
+  padding: 3px 7px;
+  border-radius: 8px;
+  font-size: 10px;
+  line-height: 1.35;
   color: #fff;
   background: rgba(8, 12, 20, 0.38);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .zodiac-card-keys em {
@@ -1317,10 +1323,17 @@ img {
 .zodiac-card-blurb,
 .zodiac-card-energy p {
   margin: 0;
-  font-size: 11px;
-  line-height: 1.6;
+  font-size: 10.5px;
+  line-height: 1.4;
   color: rgba(255, 248, 236, 0.92);
   text-shadow: 0 1px 6px rgba(0, 0, 0, 0.45);
+}
+
+.zodiac-card-blurb {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .zodiac-card-energy {
