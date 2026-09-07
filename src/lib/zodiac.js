@@ -50,7 +50,7 @@ export const ZODIAC_SIGNS = [
     tip: '小貼士：可放在銀包、書枱或睡房，持續穩住豐盛能量。',
     crystals: [
       { name: '綠幽靈', keywords: '財富 · 成長', reason: '收入慢慢疊，不必急於求成。' },
-      { name: '粉晶', keywords: '愛與和諧 · 價值', reason: '先對自己好，關係才留得住。' },
+      { name: '粉晶', keywords: '愛 · 價值', reason: '先對自己好，關係才留得住。' },
       { name: '高透黃水晶', keywords: '財富 · 自信', reason: '談條件時更敢開口。' },
       { name: '黃虎眼', keywords: '穩定 · 勇氣', reason: '該守就守，該轉就轉。' },
     ],
@@ -83,9 +83,9 @@ export const ZODIAC_SIGNS = [
       '巨蟹座情感細膩，重視家庭與安全感，容易被情緒影響。增強情感能量、療癒內在，安撫情緒起伏，增強直覺，帶來溫暖與安全感。',
     tip: '小貼士：冥想時握晶深呼吸，想像月光溫柔環繞，釋放焦慮與疲憊。',
     crystals: [
-      { name: '月光石', keywords: '平衡情緒 · 直覺', reason: '潮起潮落時，都不至於被捲走。' },
-      { name: '粉晶', keywords: '愛與療癒 · 接納', reason: '允許自己軟一點，不必硬撐。' },
-      { name: '透體灰月光', keywords: '純淨守護 · 安神', reason: '家裏空氣都靜下來。' },
+      { name: '月光石', keywords: '情緒 · 直覺', reason: '潮起潮落時，都不至於被捲走。' },
+      { name: '粉晶', keywords: '療癒 · 接納', reason: '允許自己軟一點，不必硬撐。' },
+      { name: '透體灰月光', keywords: '守護 · 安神', reason: '家裏空氣都靜下來。' },
       { name: '藍天海藍寶', keywords: '溝通 · 釋放', reason: '把悶在心口的話交出去。' },
     ],
   },
@@ -102,7 +102,7 @@ export const ZODIAC_SIGNS = [
     crystals: [
       { name: '高透黃水晶', keywords: '財富 · 自信', reason: '台上台下都站得住。' },
       { name: '黃虎眼', keywords: '力量 · 保護', reason: '被看見之餘，也不被抽乾。' },
-      { name: '草莓晶', keywords: '熱情 · 行動力', reason: '想做的事，當天就開工。' },
+      { name: '草莓晶', keywords: '熱情 · 行動', reason: '想做的事，當天就開工。' },
     ],
   },
   {
@@ -220,7 +220,7 @@ export const ZODIAC_SIGNS = [
       { name: '高透紫水晶', keywords: '靈性 · 平靜', reason: '睡前戴上，思緒較易沉下來。' },
       { name: '冰川藍海藍寶', keywords: '療癒 · 表達', reason: '哽在喉嚨的話，可以慢慢講。' },
       { name: '月光石', keywords: '直覺 · 夢境', reason: '夜間那些模糊提示，記得住。' },
-      { name: '粉晶', keywords: '愛與包容 · 療癒', reason: '對別人軟，也不忘對自己軟。' },
+      { name: '粉晶', keywords: '愛 · 療癒', reason: '對別人軟，也不忘對自己軟。' },
     ],
   },
 ]
