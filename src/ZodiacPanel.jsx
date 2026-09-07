@@ -3,6 +3,7 @@ import { daysInMonth, signBack, signFromBirth, signIcon, zodiacTone } from './li
 
 export function ZodiacCenterButton({ sign, onClick }) {
   const tone = sign ? zodiacTone(sign.element) : 'idle'
+  const iconId = sign?.id || 'aquarius'
   return (
     <button
       type="button"
@@ -12,13 +13,7 @@ export function ZodiacCenterButton({ sign, onClick }) {
       aria-label={sign ? `目前星座 ${sign.name}，點擊可修改生日` : '點擊輸入生日，查看星座推薦'}
     >
       <span className="zodiac-center-face">
-        {sign ? (
-          <img className="zodiac-center-icon" src={signIcon(sign.id)} alt="" />
-        ) : (
-          <span className="zodiac-center-star" aria-hidden>
-            ✦
-          </span>
-        )}
+        <img className="zodiac-center-icon" src={signIcon(iconId)} alt="" />
       </span>
     </button>
   )
