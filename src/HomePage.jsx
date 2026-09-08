@@ -13,16 +13,16 @@ const HEROES = [
     id: 'constellation',
     image: './home/hero-constellation.jpg',
     tag: '星座配珠',
-    title: '把星空編成可戴的手鏈',
+    title: '把星空編成可戴的手鍊',
     desc: '十二星座各有主石。輸入生日，\n讓專屬水晶跟著你的星盤走。',
     overlay: 'dark',
   },
   {
     id: 'workshop',
     image: './home/hero-workshop.png',
-    tag: '訂製更安心',
+    tag: '客製更安心',
     title: '看得見的製作過程',
-    desc: '選珠、配搭、確認手腕圍，每一步都在你眼前完成。',
+    desc: '選珠、搭配、確認手腕圍，每一步都在你眼前完成。',
     overlay: 'soft',
   },
   {
@@ -30,16 +30,16 @@ const HEROES = [
     image: './home/hero-minerals.png',
     tag: '礦物樣本',
     title: '真實樣本即時調用',
-    desc: '真實珠子相片放入托盤，碰撞、排列、成串都可預覽。',
+    desc: '真實珠子照片放入托盤，碰撞、排列、成串都可預覽。',
     overlay: 'dark',
   },
 ]
 
 const STEPS = [
-  { n: '01', title: '揀選主石', desc: '由珠子庫揀入容器', Icon: Gem },
-  { n: '02', title: '選擇配飾', desc: '配搭最新飾品襯托手鏈', Icon: Sparkle },
+  { n: '01', title: '挑選主石', desc: '從珠子庫選進托盤', Icon: Gem },
+  { n: '02', title: '選擇配飾', desc: '搭配最新飾品襯托手鍊', Icon: Sparkle },
   { n: '03', title: '調整尺寸', desc: '修改並確認手腕圍', Icon: CircleDashed },
-  { n: '04', title: '儲存落單', desc: '生成你的專屬手鏈', Icon: Check },
+  { n: '04', title: '儲存下單', desc: '生成你的專屬手鍊', Icon: Check },
 ]
 
 const STEP_PAGES = [STEPS.slice(0, 2), STEPS.slice(2, 4)]
@@ -102,7 +102,7 @@ export default function HomePage({ onCustomize, onOpenDesigner }) {
           <h2>{hero.title}</h2>
           <p>{hero.desc}</p>
           <button type="button" className="lab-cta" onClick={onCustomize}>
-            開始訂製 <ArrowRight size={16} strokeWidth={2.2} />
+            開始客製 <ArrowRight size={16} strokeWidth={2.2} />
           </button>
         </div>
         <div className="lab-dots" role="tablist">
@@ -121,7 +121,7 @@ export default function HomePage({ onCustomize, onOpenDesigner }) {
       <div className="lab-sheet">
       <section className="lab-block">
         <div className="lab-head">
-          <h3>訂製工坊</h3>
+          <h3>客製工坊</h3>
           <div className="lab-mini-dots">
             {STEP_PAGES.map((_, i) => (
               <button
@@ -205,12 +205,12 @@ export default function HomePage({ onCustomize, onOpenDesigner }) {
       <section className="lab-block lab-process">
         <div className="lab-head">
           <div>
-            <h3>落單與製作流程</h3>
+            <h3>下單與製作流程</h3>
             <p className="lab-sub">真實，是我們一直堅持的目標</p>
           </div>
         </div>
         <article className="lab-process-card">
-          <img className="lab-process-guide" src="./home/guide.png" alt="落單後製作與確認流程" />
+          <img className="lab-process-guide" src="./home/guide.png" alt="下單後製作與確認流程" />
         </article>
       </section>
       <p className="page-powered">Powered by 珠珠客製</p>

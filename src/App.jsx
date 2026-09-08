@@ -31,7 +31,7 @@ import {
   TRAY_POS,
   computeScale,
   cordSvgR,
-  formatPrice,
+  formatMoney,
   isPendant,
   isThinSpacer,
   reorderByAngle,
@@ -555,7 +555,7 @@ export default function App() {
 
   function makeNow() {
     if (!beads.length) {
-      showToast('請先揀選珠子，再提交製作')
+      showToast('請先挑選珠子，再送出製作')
       return
     }
     openProductDetail('我的設計')
@@ -563,7 +563,7 @@ export default function App() {
 
   function saveDesign() {
     if (!beads.length) {
-      showToast('請先揀選珠子，再儲存設計')
+      showToast('請先挑選珠子，再儲存設計')
       return
     }
     const item = snapshotDesign(beads, { wrist: stats.wrist, name: '我的設計' })
@@ -722,8 +722,8 @@ export default function App() {
           </div>
           <div className="status">
             <div className="price-block">
-              <strong>HK$ {formatPrice(stats.price)}</strong>
-              <span>{stats.count} 粒</span>
+              <strong>{formatMoney(stats.price)}</strong>
+              <span>{stats.count} 顆</span>
             </div>
             <div className="wrist-block">
               建議淨手腕圍 {stats.wrist.inner.toFixed(1)}cm{' '}
@@ -856,7 +856,7 @@ export default function App() {
                         </button>
                         <h3>{product.name}</h3>
                         <p>
-                          {variant.diameter}mm - HK$ {variant.price}
+                          {variant.diameter}mm · {formatMoney(variant.price)}
                         </p>
                         <div className="stepper">
                           <button type="button" disabled={!canMinus} onClick={() => changeSize(product, -1)} aria-label="縮小尺寸">
@@ -897,7 +897,7 @@ export default function App() {
                     </button>
                     <h3>{product.name}</h3>
                     <p>
-                      {variant.diameter}mm - HK$ {variant.price}
+                      {variant.diameter}mm · {formatMoney(variant.price)}
                     </p>
                     <div className="stepper">
                       <button type="button" disabled={!canMinus} onClick={() => changeSize(product, -1)} aria-label="縮小尺寸">

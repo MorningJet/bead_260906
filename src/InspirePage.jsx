@@ -14,7 +14,7 @@ export default function InspirePage({ onOpenWork }) {
       <header className="me-bar">
         <div className="inspire-head">
           <h1>靈感</h1>
-          <p className="lab-sub">瀏覽設計師真實作品，找到適合你的配搭靈感</p>
+          <p className="lab-sub">瀏覽設計師真實作品，找到適合你的搭配靈感</p>
         </div>
       </header>
 

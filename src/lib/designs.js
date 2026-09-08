@@ -41,6 +41,6 @@ export function formatSavedAt(iso) {
   const sameDay = d.toDateString() === now.toDateString()
   const hh = String(d.getHours()).padStart(2, '0')
   const mm = String(d.getMinutes()).padStart(2, '0')
-  if (sameDay) return `今日 ${hh}:${mm}`
+  if (sameDay) return `今天 ${hh}:${mm}`
   return `${d.getMonth() + 1}-${String(d.getDate()).padStart(2, '0')} ${hh}:${mm}`
 }

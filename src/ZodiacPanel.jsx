@@ -10,7 +10,7 @@ export function ZodiacCenterButton({ sign, onClick }) {
       className={`zodiac-center is-${tone} ${sign ? 'has-sign' : 'is-idle'}`}
       onClick={onClick}
       onPointerDown={(e) => e.stopPropagation()}
-      aria-label={sign ? `目前星座 ${sign.name}，點擊可修改生日` : '點擊輸入生日，查看星座推薦'}
+      aria-label={sign ? `目前星座 ${sign.name}，點選可修改生日` : '點選輸入生日，查看星座推薦'}
     >
       <span className="zodiac-center-face">
         <img className="zodiac-center-icon" src={signIcon(iconId)} alt="" />

@@ -65,7 +65,7 @@ export default function ServiceCat({ openSignal = 0 }) {
             <header>
               <div>
                 <strong>聯絡客服</strong>
-                <span>掃描二維碼開啟 Instagram</span>
+                <span>掃描 QR Code 開啟 Instagram</span>
               </div>
               <button type="button" onClick={() => setOpen(false)} aria-label="關閉">
                 ×

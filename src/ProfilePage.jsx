@@ -22,7 +22,7 @@ import {
 const QUICK = [
   { id: 'orders', label: '我的訂單', Icon: CreditCard },
   { id: 'designs', label: '我的設計', Icon: Activity },
-  { id: 'address', label: '送貨地址', Icon: MapPin },
+  { id: 'address', label: '收件地址', Icon: MapPin },
 ]
 
 const MENUS = [
@@ -41,7 +41,7 @@ const MENUS = [
   {
     id: 'terms',
     title: '服務條款',
-    desc: '查看平台協議與私隱條款，保障交易安全',
+    desc: '查看平台協議與隱私權條款，保障交易安全',
     Icon: FileText,
   },
 ]
@@ -49,14 +49,14 @@ const MENUS = [
 const SIMPLE = {
   login: {
     title: '登入 / 註冊',
-    body: '示範環境暫未接駁帳戶。登入後可管理訂單、送貨地址與我的設計。',
+    body: '示範環境暫未串接帳號。登入後可管理訂單、收件地址與我的設計。',
   },
 }
 
 const PAGE_TITLE = {
   orders: '我的訂單',
   designs: '我的設計',
-  address: '送貨地址',
+  address: '收件地址',
   notice: '我的通知',
   help: '幫助中心',
   terms: '服務條款',
@@ -119,7 +119,7 @@ export default function ProfilePage({
         <button type="button" className="me-user" onClick={() => setPage('login')}>
           <img src="./home/profile-avatar-female.png" alt="" />
           <div>
-            <strong>點擊登入 / 註冊</strong>
+            <strong>點選登入 / 註冊</strong>
             <p>登入後可管理訂單、地址與我的設計</p>
           </div>
         </button>
@@ -166,14 +166,14 @@ export default function ProfilePage({
           駐場設計師
         </span>
         <h2>成為 Pearl 靈感設計師</h2>
-        <p>上載真實作品與佩戴場景，令更多人看見你的配搭。</p>
+        <p>上傳真實作品與佩戴場景，讓更多人看見你的搭配。</p>
         <div className="me-stats">
           <div>
             <b>99+</b>
             <span>駐場設計師</span>
           </div>
           <div>
-            <b>HK$ 9,900</b>
+            <b>NT$ 39,900</b>
             <span>最高每月收入</span>
           </div>
           <div>

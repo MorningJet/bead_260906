@@ -1,12 +1,12 @@
 import BraceletPreview from './BraceletPreview.jsx'
 import { ChevronLeft, Pencil } from 'lucide-react'
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { formatPrice, wristFromBeads } from './lib/geometry.js'
+import { formatMoney, wristFromBeads } from './lib/geometry.js'
 
 const NOTES = [
   {
-    title: '落單與確認',
-    text: '提交後由人手選珠、穿串。成串後會提供實拍相片與影片確認，3 日內未回覆視為確認並安排出貨。',
+    title: '下單與確認',
+    text: '送出後由人工選珠、穿串。成串後會提供實拍照片與影片確認，3 日內未回覆視為確認並安排出貨。',
   },
   {
     title: '天然差異',
@@ -14,11 +14,11 @@ const NOTES = [
   },
   {
     title: '佩戴保養',
-    text: '避免接觸香水、酒精與化學清潔劑；勿長時間浸水或暴曬。除下時平放或收入絨袋，避免碰撞。',
+    text: '避免接觸香水、酒精與化學清潔劑；勿長時間浸水或暴曬。取下時平放或收入絨袋，避免碰撞。',
   },
   {
     title: '售後說明',
-    text: '訂製手鏈不設無理由退貨。收貨 7 日內如有斷線、缺珠或尺寸明顯不符，可聯絡客服並提供訂單編號與相片。',
+    text: '客製手鍊不接受無理由退貨。收貨 7 日內如有斷線、缺珠或尺寸明顯不符，可聯絡客服並提供訂單編號與照片。',
   },
 ]
 
@@ -116,7 +116,7 @@ export default function ProductDetailPage({
       </section>
 
       <section className="me-card detail-info">
-        <h2>手鏈資料</h2>
+        <h2>手鍊資料</h2>
         <ul>
           <li>
             <span>淨手腕圍</span>
@@ -124,7 +124,7 @@ export default function ProductDetailPage({
           </li>
           <li>
             <span>珠子合計</span>
-            <b>{beads.length} 粒</b>
+            <b>{beads.length} 顆</b>
           </li>
           {groups.map((g) => (
             <li key={g.key}>
@@ -136,11 +136,11 @@ export default function ProductDetailPage({
           ))}
           <li>
             <span>運費</span>
-            <b>{ship === 0 ? '免運費' : `HK$ ${formatPrice(ship)}`}</b>
+            <b>{ship === 0 ? '免運費' : formatMoney(ship)}</b>
           </li>
           <li className="detail-total">
             <span>總額</span>
-            <b>HK$ {formatPrice(total)}</b>
+            <b>{formatMoney(total)}</b>
           </li>
         </ul>
       </section>
@@ -157,8 +157,8 @@ export default function ProductDetailPage({
 
       <div className="detail-pay">
         <div>
-          <em>應付</em>
-          <strong>HK$ {formatPrice(total)}</strong>
+          <em>應付金額</em>
+          <strong>{formatMoney(total)}</strong>
         </div>
         <button type="button" onClick={onPay}>
           立即付款

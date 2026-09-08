@@ -47,7 +47,7 @@ export const ZODIAC_SIGNS = [
     keywords: '穩定 · 豐盛 · 耐心 · 感官享受',
     reading:
       '金牛座重視踏實與感官享受。增強安全感與物質吸引力，幫助穩定情緒、享受當下，吸引財富與美好，建立舒適生活。',
-    tip: '小貼士：可放在銀包、書枱或睡房，持續穩住豐盛能量。',
+    tip: '小貼士：可放在皮夾、書桌或臥室，持續穩住豐盛能量。',
     crystals: [
       { name: '綠幽靈', keywords: '財富 · 成長', reason: '收入慢慢疊，不必急於求成。' },
       { name: '粉晶', keywords: '愛 · 價值', reason: '先對自己好，關係才留得住。' },
@@ -66,7 +66,7 @@ export const ZODIAC_SIGNS = [
       '雙子座思維敏捷，善於交流，適應力強，好奇心旺盛。需要能量來提升專注、穩定情緒，避免思維過於分散。',
     tip: '使用場景：學習、寫作或社交前佩戴，幫助思緒歸位。',
     crystals: [
-      { name: '天河石', keywords: '溝通 · 表達', reason: '話講得準，對方一次就聽明。' },
+      { name: '天河石', keywords: '溝通 · 表達', reason: '話說得準，對方一次就聽懂。' },
       { name: '淨體白水晶', keywords: '淨化 · 聚焦', reason: '打開書本就不亂跑神。' },
       { name: '玻利維亞紫水晶', keywords: '智慧 · 學習', reason: '吸收快，記得也牢。' },
       { name: '冰川藍海藍寶', keywords: '平靜 · 表達', reason: '先沉住氣，再把重點講完。' },
@@ -78,14 +78,14 @@ export const ZODIAC_SIGNS = [
     symbol: '♋',
     element: '水象',
     range: '6.22 ~ 7.22',
-    keywords: '家庭 · 保護 · 安全感 · 共情',
+    keywords: '家庭 · 保護 · 安全感 · 同理',
     reading:
       '巨蟹座情感細膩，重視家庭與安全感，容易被情緒影響。增強情感能量、療癒內在，安撫情緒起伏，增強直覺，帶來溫暖與安全感。',
     tip: '小貼士：冥想時握晶深呼吸，想像月光溫柔環繞，釋放焦慮與疲憊。',
     crystals: [
       { name: '月光石', keywords: '情緒 · 直覺', reason: '潮起潮落時，都不至於被捲走。' },
       { name: '粉晶', keywords: '療癒 · 接納', reason: '允許自己軟一點，不必硬撐。' },
-      { name: '透體灰月光', keywords: '守護 · 安神', reason: '家裏空氣都靜下來。' },
+      { name: '透體灰月光', keywords: '守護 · 安神', reason: '家裡空氣都靜下來。' },
       { name: '藍天海藍寶', keywords: '溝通 · 釋放', reason: '把悶在心口的話交出去。' },
     ],
   },
@@ -102,7 +102,7 @@ export const ZODIAC_SIGNS = [
     crystals: [
       { name: '高透黃水晶', keywords: '財富 · 自信', reason: '台上台下都站得住。' },
       { name: '黃虎眼', keywords: '力量 · 保護', reason: '被看見之餘，也不被抽乾。' },
-      { name: '草莓晶', keywords: '熱情 · 行動', reason: '想做的事，當天就開工。' },
+      { name: '草莓晶', keywords: '熱情 · 行動', reason: '想做的事，當天就動手。' },
     ],
   },
   {
@@ -118,7 +118,7 @@ export const ZODIAC_SIGNS = [
     crystals: [
       { name: '玻利維亞紫水晶', keywords: '智慧 · 靈性', reason: '細節對了，整件事就順。' },
       { name: '綠幽靈', keywords: '淨化 · 成長', reason: '去掉多餘，留下真正有用的。' },
-      { name: '淨體白水晶', keywords: '淨化 · 平衡', reason: '忙完也能收工睡覺。' },
+      { name: '淨體白水晶', keywords: '淨化 · 平衡', reason: '忙完也能下班睡覺。' },
       { name: '黃螢石', keywords: '專注 · 秩序', reason: '清單寫好，一步一步清。' },
     ],
   },
@@ -134,7 +134,7 @@ export const ZODIAC_SIGNS = [
     tip: '使用場景：需要做選擇或進入社交場合前佩戴，幫助找到自己的中線。',
     crystals: [
       { name: '粉晶', keywords: '愛 · 和諧', reason: '相處不靠單方面讓步硬撐。' },
-      { name: '綠英石', keywords: '平衡 · 療癒', reason: '兩邊都想要時，幫你落筆。' },
+      { name: '綠英石', keywords: '平衡 · 療癒', reason: '兩邊都想要時，幫你下筆。' },
       { name: '月光石', keywords: '直覺 · 靈感', reason: '不必再問十個人才決定。' },
       { name: '白水晶', keywords: '淨化 · 平衡', reason: '比較心一淡，選擇就清楚。' },
     ],
@@ -145,13 +145,13 @@ export const ZODIAC_SIGNS = [
     symbol: '♏',
     element: '水象',
     range: '10.24 ~ 11.22',
-    keywords: '深度 · 蜕變 · 直覺 · 神秘',
+    keywords: '深度 · 蛻變 · 直覺 · 神秘',
     reading:
-      '天蠍座洞察力強，情感深刻，追求真相與內在蜕變。增強洞察力與直覺，保護能量場，釋放負能量，激發內在力量，幫助完成蜕變與成長。',
+      '天蠍座洞察力強，情感深刻，追求真相與內在蛻變。增強洞察力與直覺，保護能量場，釋放負能量，激發內在力量，幫助完成蛻變與成長。',
     tip: '小貼士：睡前冥想，把水晶放在枕邊，幫助夢境靈感與深度療癒。',
     crystals: [
-      { name: '高透冰曜石', keywords: '辟邪 · 釋放', reason: '舊情緒卸下來，不再背着走。' },
-      { name: '烏拉圭紫水晶', keywords: '直覺 · 守護', reason: '邊界更清楚，誰近誰遠自己知。' },
+      { name: '高透冰曜石', keywords: '辟邪 · 釋放', reason: '舊情緒卸下來，不再揹著走。' },
+      { name: '烏拉圭紫水晶', keywords: '直覺 · 守護', reason: '邊界更清楚，誰近誰遠自己清楚。' },
       { name: '硃砂', keywords: '熱情 · 重生', reason: '結束一段，才開得下一段。' },
       { name: '灰月光', keywords: '靈性 · 保護', reason: '深潛時仍留一口氣上來。' },
     ],
@@ -181,7 +181,7 @@ export const ZODIAC_SIGNS = [
     keywords: '責任 · 目標 · 毅力 · 成就',
     reading:
       '摩羯座肩負感強、目標長遠。增強毅力與耐力，帶來穩定能量，幫助腳踏實地、克服困難，達成長期目標與事業成就。',
-    tip: '小貼士：放在工作枱或隨身佩戴，支援事業與目標落地。',
+    tip: '小貼士：放在辦公桌或隨身佩戴，支援事業與目標落地。',
     crystals: [
       { name: '深茶晶', keywords: '穩定 · 接地', reason: '加班也踩得住地面。' },
       { name: '黑金超', keywords: '保護 · 防禦', reason: '少被閒話和雜事打斷。' },
@@ -201,7 +201,7 @@ export const ZODIAC_SIGNS = [
     tip: '充能建議：靠近自然、風與陽光，保持好奇心，並定期淨化。',
     crystals: [
       { name: '黃螢石', keywords: '思維 · 靈感', reason: '怪點子變得可以實作。' },
-      { name: '藍晶石', keywords: '智慧 · 洞察', reason: '一眼睇穿結構，再講給人聽。' },
+      { name: '藍晶石', keywords: '智慧 · 洞察', reason: '一眼看穿結構，再講給人聽。' },
       { name: '高透紫水晶', keywords: '靈性 · 守護', reason: '獨立之餘不被抽空。' },
       { name: '白水晶', keywords: '淨化 · 放大', reason: '雜訊少了，好主意才亮。' },
     ],
@@ -212,14 +212,14 @@ export const ZODIAC_SIGNS = [
     symbol: '♓',
     element: '水象',
     range: '2.19 ~ 3.20',
-    keywords: '夢幻 · 靈性 · 同情心 · 創造力',
+    keywords: '夢幻 · 靈性 · 同理心 · 創造力',
     reading:
-      '雙魚座想像力豐富、共情力強，容易受外界影響，需要能量保護與療癒。提升靈性與直覺，療癒情緒，增強共情與創造力，帶來愛與包容。',
+      '雙魚座想像力豐富、同理心強，容易受外界影響，需要能量保護與療癒。提升靈性與直覺，療癒情緒，增強同理與創造力，帶來愛與包容。',
     tip: '小貼士：隨身攜帶水象水晶，保護能量場，改善睡眠，增強靈感。',
     crystals: [
       { name: '高透紫水晶', keywords: '靈性 · 平靜', reason: '睡前戴上，思緒較易沉下來。' },
       { name: '冰川藍海藍寶', keywords: '療癒 · 表達', reason: '哽在喉嚨的話，可以慢慢講。' },
-      { name: '月光石', keywords: '直覺 · 夢境', reason: '夜間那些模糊提示，記得住。' },
+      { name: '月光石', keywords: '直覺 · 夢境', reason: '夜間那些模糊提示，也能記住。' },
       { name: '粉晶', keywords: '愛 · 療癒', reason: '對別人軟，也不忘對自己軟。' },
     ],
   },

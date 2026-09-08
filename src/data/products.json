@@ -8,12 +8,12 @@
       {
         "sku": "SJ0001-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0001-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -26,12 +26,12 @@
       {
         "sku": "SJ0002-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0002-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -44,12 +44,12 @@
       {
         "sku": "SJ0003-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0003-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -62,12 +62,12 @@
       {
         "sku": "SJ0004-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0004-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -80,12 +80,12 @@
       {
         "sku": "SJ0005-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0005-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -98,17 +98,17 @@
       {
         "sku": "SJ0006-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0006-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
   {
-    "name": "檸檬晶菠蘿",
+    "name": "檸檬晶鳳梨",
     "category1": "珠子",
     "category2": "黃水晶",
     "image": "product_pic/柠檬晶菠萝.png",
@@ -116,12 +116,12 @@
       {
         "sku": "SJ0007-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0007-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -134,12 +134,12 @@
       {
         "sku": "SJ0008-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0008-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -152,12 +152,12 @@
       {
         "sku": "SJ0009-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0009-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -170,12 +170,12 @@
       {
         "sku": "SJ0010-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0010-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -188,12 +188,12 @@
       {
         "sku": "SJ0011-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0011-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -206,12 +206,12 @@
       {
         "sku": "SJ0012-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0012-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -224,12 +224,12 @@
       {
         "sku": "SJ0013-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0013-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -242,12 +242,12 @@
       {
         "sku": "SJ0014-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0014-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -260,12 +260,12 @@
       {
         "sku": "SJ0015-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0015-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -278,12 +278,12 @@
       {
         "sku": "SJ0016-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0016-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -296,12 +296,12 @@
       {
         "sku": "SJ0017-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0017-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -314,12 +314,12 @@
       {
         "sku": "SJ0018-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0018-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -332,12 +332,12 @@
       {
         "sku": "SJ0019-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0019-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -350,12 +350,12 @@
       {
         "sku": "SJ0020-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0020-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -368,12 +368,12 @@
       {
         "sku": "SJ0021-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0021-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -386,12 +386,12 @@
       {
         "sku": "SJ0022-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0022-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -404,12 +404,12 @@
       {
         "sku": "SJ0023-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0023-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -422,12 +422,12 @@
       {
         "sku": "SJ0024-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0024-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -440,12 +440,12 @@
       {
         "sku": "SJ0025-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0025-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -458,12 +458,12 @@
       {
         "sku": "SJ0026-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0026-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -476,12 +476,12 @@
       {
         "sku": "SJ0027-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0027-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -494,12 +494,12 @@
       {
         "sku": "SJ0028-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0028-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -512,12 +512,12 @@
       {
         "sku": "SJ0029-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0029-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -530,12 +530,12 @@
       {
         "sku": "SJ0030-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0030-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -548,12 +548,12 @@
       {
         "sku": "SJ0031-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0031-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -566,12 +566,12 @@
       {
         "sku": "SJ0032-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0032-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -584,12 +584,12 @@
       {
         "sku": "SJ0033-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0033-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -602,12 +602,12 @@
       {
         "sku": "SJ0034-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0034-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -620,12 +620,12 @@
       {
         "sku": "SJ0035-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0035-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -638,12 +638,12 @@
       {
         "sku": "SJ0036-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0036-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -656,12 +656,12 @@
       {
         "sku": "SJ0037-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0037-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -674,12 +674,12 @@
       {
         "sku": "SJ0038-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0038-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -692,12 +692,12 @@
       {
         "sku": "SJ0039-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0039-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -710,12 +710,12 @@
       {
         "sku": "SJ0040-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0040-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -728,12 +728,12 @@
       {
         "sku": "SJ0041-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0041-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -746,12 +746,12 @@
       {
         "sku": "SJ0042-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0042-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -764,12 +764,12 @@
       {
         "sku": "SJ0043-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0043-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -782,12 +782,12 @@
       {
         "sku": "SJ0044-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0044-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -800,12 +800,12 @@
       {
         "sku": "SJ0045-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0045-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -818,12 +818,12 @@
       {
         "sku": "SJ0046-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0046-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -836,12 +836,12 @@
       {
         "sku": "SJ0047-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0047-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },
@@ -854,12 +854,12 @@
       {
         "sku": "SJ0048-08",
         "diameter": 8,
-        "price": 39
+        "price": 59
       },
       {
         "sku": "SJ0048-10",
         "diameter": 10,
-        "price": 59
+        "price": 129
       }
     ]
   },

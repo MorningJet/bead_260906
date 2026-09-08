@@ -197,7 +197,11 @@ export function wristFromBeads(beads) {
 }
 
 export function formatPrice(n) {
-  return n.toFixed(1)
+  return Math.round(Number(n) || 0).toLocaleString('zh-TW')
+}
+
+export function formatMoney(n) {
+  return `NT$ ${formatPrice(n)}`
 }
 
 export function angleNorm(a) {
